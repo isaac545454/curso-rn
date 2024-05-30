@@ -1,11 +1,16 @@
 import React from 'react'
-import { Text as TNText, TextProps as RNTextProps, TextStyle } from 'react-native'
-import { TextVariants } from './fontSizes'
+import { Text as TNText, TextProps as RNTextProps } from 'react-native'
+import { TextVariants, $fontSizes } from './fontSizes'
+import { GetFontFamily, getFontFamily } from './getFontFamily'
 
-type TextProps = RNTextProps & {
+type TextProps = {
 	preset?: TextVariants
-}
+} & RNTextProps &
+	GetFontFamily
 
 export const Text = (props: TextProps) => {
-	return <TNText {...props} />
+	const { preset = 'paragraphMedium', style: RNStyle, bold, italic, semiBold, ...rest } = props
+	const fontFamily = getFontFamily({ preset, bold, italic, semiBold })
+	const style = [$fontSizes[preset], RNStyle, { fontFamily: fontFamily }]
+	return <TNText {...rest} style={style} />
 }
