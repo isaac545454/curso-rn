@@ -11,5 +11,5 @@ export type ButtonUI = {
 export type ButtonProps = {
 	title: string
 	loading?: boolean
-	preset: ButtonPreset
+	preset?: ButtonPreset
 } & TouchableOpacityBoxProps

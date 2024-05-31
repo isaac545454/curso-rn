@@ -17,6 +17,9 @@ function App(): React.JSX.Element {
 			<Box gap={'s20'}>
 				<Button title="taste" />
 				<Button title="taste" loading={true} />
+				<Button title="taste" preset="outline" />
+				<Button title="taste" />
+				<Button title="taste" />
 			</Box>
 		</ThemeProvider>
 	)
