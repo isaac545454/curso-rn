@@ -1,1 +1,1 @@
-export { type Theme, theme, useThemeRestyle } from './theme'
+export { type Theme, theme, useThemeRestyle, type ThemeColors } from './theme'
