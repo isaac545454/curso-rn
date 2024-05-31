@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native'
 
 import { Text } from './src/components/Text'
 import { ThemeProvider } from '@shopify/restyle'
-import { theme } from './src/theme/theme'
+import { theme } from './src/theme'
 import { Button } from './src/components/Button'
 import { Box } from './src/components/Box'
 

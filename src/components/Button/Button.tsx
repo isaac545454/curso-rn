@@ -1,16 +1,16 @@
 import { Text } from '../Text'
-import { Box } from '../Box'
+import { TouchableOpacityBox, TouchableOpacityBoxProps } from '../TouchableOpacityBox'
 import { ActivityIndicator } from 'react-native'
 
 type ButtonProps = {
 	title: string
 	loading?: boolean
-} & React.ComponentProps<typeof Box>
+} & TouchableOpacityBoxProps
 
-export const Button = ({ title, loading, ...rest }: ButtonProps) => {
+export const Button = ({ title, loading, ...touchableOpacityBoxProps }: ButtonProps) => {
 	return (
-		<Box
-			{...rest}
+		<TouchableOpacityBox
+			{...touchableOpacityBoxProps}
 			backgroundColor="buttonPrimary"
 			paddingHorizontal="s20"
 			alignItems="center"
@@ -20,10 +20,10 @@ export const Button = ({ title, loading, ...rest }: ButtonProps) => {
 		>
 			{loading && <ActivityIndicator />}
 			{!loading && (
-				<Text bold style={{ color: '#fff' }}>
+				<Text bold color="primaryContrast">
 					{title}
 				</Text>
 			)}
-		</Box>
+		</TouchableOpacityBox>
 	)
 }
