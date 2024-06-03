@@ -13,15 +13,7 @@ import { EyeOnIcon } from './src/components/icons/EyeOnIcon/EyeOnIcon'
 function App(): React.JSX.Element {
 	return (
 		<ThemeProvider theme={theme}>
-			<SafeAreaView>
-				<Text> -Italic</Text>
-			</SafeAreaView>
 			<Box gap={'s20'}>
-				<Button title="taste" />
-				<Button title="taste" loading={true} />
-				<Button title="taste" preset="outline" />
-				<Button title="taste" />
-				<Button title="taste" />
 				<EyeOffIcon />
 				<EyeOnIcon />
 			</Box>

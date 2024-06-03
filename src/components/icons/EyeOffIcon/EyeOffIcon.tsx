@@ -1,12 +1,12 @@
 import React from 'react'
 import { Svg, Path } from 'react-native-svg'
 
-type EyeOffIconProps = {
+export type IconProps = {
 	color?: string
 	size?: number
 }
 
-export const EyeOffIcon = ({ color = 'black', size = 20 }: EyeOffIconProps) => {
+export const EyeOffIcon = ({ color = 'black', size = 20 }: IconProps) => {
 	return (
 		<Svg width={size} height={size} viewBox="0 0 20 20" fill="none">
 			<Path
