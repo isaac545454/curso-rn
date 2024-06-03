@@ -8,6 +8,7 @@ import { Button } from './src/components/UI/Button'
 import { ThemeProvider } from '@shopify/restyle'
 import { theme } from './src/theme'
 import { EyeOffIcon } from './src/components/icons/EyeOffIcon'
+import { EyeOnIcon } from './src/components/icons/EyeOnIcon/EyeOnIcon'
 
 function App(): React.JSX.Element {
 	return (
@@ -22,6 +23,7 @@ function App(): React.JSX.Element {
 				<Button title="taste" />
 				<Button title="taste" />
 				<EyeOffIcon />
+				<EyeOnIcon />
 			</Box>
 		</ThemeProvider>
 	)
