@@ -15,6 +15,7 @@ import { HeartIcon } from '../HeartIcon'
 import { HomeIcon } from '../HomeIcon'
 import { MessageIcon } from '../MessageIcon'
 import { MoreIcon } from '../MoreIcon/MoreIcon'
+import { NewPostIcon } from '../NewPostIcon'
 import { ProfileIcon } from '../ProfileIcon'
 import { SearchIcon } from '../SearchIcon/SearchIcon'
 import { SendIcon } from '../SendIcon'
@@ -44,6 +45,7 @@ export const IconRegistry = {
 	chatOn: ChatOnIcon,
 	flashOff: FlashOffIcon,
 	flashOn: FlashOnIcon,
+	newPost: NewPostIcon,
 }
 
 export type IconType = typeof IconRegistry
