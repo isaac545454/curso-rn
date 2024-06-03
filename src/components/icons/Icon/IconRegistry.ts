@@ -1,6 +1,7 @@
 import { ArrowLeftIcon } from '../ArrowLeftIcon'
 import { BellIcon } from '../BellIcon'
 import { ChatIcon } from '../ChatIcon'
+import { CheckIcon } from '../CheckIcon'
 import { EyeOffIcon } from '../EyeOffIcon'
 import { EyeOnIcon } from '../EyeOnIcon/EyeOnIcon'
 import { HeartIcon } from '../HeartIcon'
@@ -26,6 +27,7 @@ export const IconRegistry = {
 	more: MoreIcon,
 	heart: HeartIcon,
 	bell: BellIcon,
+	check: CheckIcon,
 }
 
 export type IconType = typeof IconRegistry
