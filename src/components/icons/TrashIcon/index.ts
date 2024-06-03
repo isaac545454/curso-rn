@@ -1,1 +1,1 @@
-export * from './Trash'
+export * from './TrashIcon'
