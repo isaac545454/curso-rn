@@ -1,9 +1,9 @@
-import { IconProps as TIconProps } from '../EyeOffIcon'
+import { IconBase } from './'
 import { IconName, IconRegistry } from './IconRegistry'
 
 type IconProps = {
 	name: IconName
-} & TIconProps
+} & IconBase
 
 export const Icon = ({ name, ...iconProps }: IconProps) => {
 	const SVGIcon = IconRegistry[name]
