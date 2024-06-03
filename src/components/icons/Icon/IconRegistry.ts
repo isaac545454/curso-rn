@@ -3,6 +3,7 @@ import { ChatIcon } from '../ChatIcon'
 import { EyeOffIcon } from '../EyeOffIcon'
 import { EyeOnIcon } from '../EyeOnIcon/EyeOnIcon'
 import { HomeIcon } from '../HomeIcon'
+import { MoreIcon } from '../MoreIcon/MoreIcon'
 import { ProfileIcon } from '../ProfileIcon'
 import { SearchIcon } from '../SearchIcon/SearchIcon'
 import { SendIcon } from '../SendIcon'
@@ -20,6 +21,7 @@ export const IconRegistry = {
 	home: HomeIcon,
 	profile: ProfileIcon,
 	chat: ChatIcon,
+	more: MoreIcon,
 }
 
 export type IconType = typeof IconRegistry
