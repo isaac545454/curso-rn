@@ -1,4 +1,5 @@
 import { ArrowLeftIcon } from '../ArrowLeftIcon'
+import { ChatIcon } from '../ChatIcon'
 import { EyeOffIcon } from '../EyeOffIcon'
 import { EyeOnIcon } from '../EyeOnIcon/EyeOnIcon'
 import { HomeIcon } from '../HomeIcon'
@@ -18,6 +19,7 @@ export const IconRegistry = {
 	search: SearchIcon,
 	home: HomeIcon,
 	profile: ProfileIcon,
+	chat: ChatIcon,
 }
 
 export type IconType = typeof IconRegistry
