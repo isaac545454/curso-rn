@@ -3,7 +3,7 @@ import {
 	ActivityIndicator as RNActivityIndicator,
 	ActivityIndicatorProps as RNActivityIndicatorProps,
 } from 'react-native'
-import { ThemeColors, useThemeRestyle } from '../../theme'
+import { ThemeColors, useThemeRestyle } from '../../../theme'
 
 type ActivityIndicatorProps = {
 	color: ThemeColors

@@ -2,11 +2,12 @@ import React from 'react'
 
 import { SafeAreaView } from 'react-native'
 
-import { Text } from './src/components/Text'
+import { Text } from './src/components/UI/Text'
+import { Box } from './src/components/UI/Box'
+import { Button } from './src/components/UI/Button'
 import { ThemeProvider } from '@shopify/restyle'
 import { theme } from './src/theme'
-import { Button } from './src/components/Button'
-import { Box } from './src/components/Box'
+import { EyeOffIcon } from './src/components/icons/EyeOffIcon'
 
 function App(): React.JSX.Element {
 	return (
@@ -20,6 +21,7 @@ function App(): React.JSX.Element {
 				<Button title="taste" preset="outline" />
 				<Button title="taste" />
 				<Button title="taste" />
+				<EyeOffIcon />
 			</Box>
 		</ThemeProvider>
 	)
