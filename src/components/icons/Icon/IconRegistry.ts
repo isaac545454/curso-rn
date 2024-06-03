@@ -14,6 +14,7 @@ import { EyeOffIcon } from '../EyeOffIcon'
 import { EyeOnIcon } from '../EyeOnIcon/EyeOnIcon'
 import { FlashOffIcon } from '../FlashOffIcon'
 import { FlashOnIcon } from '../FlashOnIcon'
+import { HeartFillIcon } from '../HeartFillIcon'
 import { HeartIcon } from '../HeartIcon'
 import { HomeFillIcon } from '../HomeFillIcon'
 import { HomeIcon } from '../HomeIcon'
@@ -22,9 +23,9 @@ import { MoreIcon } from '../MoreIcon/MoreIcon'
 import { NewPostIcon } from '../NewPostIcon'
 import { ProfileFillIcon } from '../ProfileFillIcon'
 import { ProfileIcon } from '../ProfileIcon'
-import { SearchIcon } from '../SearchIcon/SearchIcon'
+import { SearchIcon } from '../SearchIcon'
 import { SendIcon } from '../SendIcon'
-import { SettingsIcon } from '../SettingsIcon/SettingsIcon'
+import { SettingsIcon } from '../SettingsIcon'
 import { TrashIcon } from '../TrashIcon'
 
 export const IconRegistry = {
@@ -56,6 +57,7 @@ export const IconRegistry = {
 	bookmarkFill: BookmarkFillIcon,
 	profileFill: ProfileFillIcon,
 	chevronRight: ChevronRightIcon,
+	heartFill: HeartFillIcon,
 }
 
 export type IconType = typeof IconRegistry
