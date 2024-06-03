@@ -1,4 +1,5 @@
 import { ArrowLeftIcon } from '../ArrowLeftIcon'
+import { ArrowRightIcon } from '../ArrowRightIcon'
 import { BellIcon } from '../BellIcon'
 import { BellOnIcon } from '../BellOnIcon'
 import { BookmarkIcon } from '../BookmarkIcon'
@@ -46,6 +47,7 @@ export const IconRegistry = {
 	flashOff: FlashOffIcon,
 	flashOn: FlashOnIcon,
 	newPost: NewPostIcon,
+	arrowRight: ArrowRightIcon,
 }
 
 export type IconType = typeof IconRegistry
