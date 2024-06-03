@@ -10,6 +10,7 @@ import { CommentIcon } from '../CommentIcon'
 import { EyeOffIcon } from '../EyeOffIcon'
 import { EyeOnIcon } from '../EyeOnIcon/EyeOnIcon'
 import { FlashOffIcon } from '../FlashOffIcon'
+import { FlashOnIcon } from '../FlashOnIcon'
 import { HeartIcon } from '../HeartIcon'
 import { HomeIcon } from '../HomeIcon'
 import { MessageIcon } from '../MessageIcon'
@@ -42,6 +43,7 @@ export const IconRegistry = {
 	bookmark: BookmarkIcon,
 	chatOn: ChatOnIcon,
 	flashOff: FlashOffIcon,
+	flashOn: FlashOnIcon,
 }
 
 export type IconType = typeof IconRegistry
