@@ -8,6 +8,7 @@ import { CameraIcon } from '../CameraIcon'
 import { ChatIcon } from '../ChatIcon'
 import { ChatOnIcon } from '../ChatOnIcon'
 import { CheckIcon } from '../CheckIcon'
+import { ChevronRightIcon } from '../ChevronRightIcon'
 import { CommentIcon } from '../CommentIcon'
 import { EyeOffIcon } from '../EyeOffIcon'
 import { EyeOnIcon } from '../EyeOnIcon/EyeOnIcon'
@@ -54,6 +55,7 @@ export const IconRegistry = {
 	homeFill: HomeFillIcon,
 	bookmarkFill: BookmarkFillIcon,
 	profileFill: ProfileFillIcon,
+	chevronRight: ChevronRightIcon,
 }
 
 export type IconType = typeof IconRegistry
