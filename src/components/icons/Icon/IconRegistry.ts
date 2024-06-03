@@ -1,5 +1,6 @@
 import { ArrowLeftIcon } from '../ArrowLeftIcon'
 import { BellIcon } from '../BellIcon'
+import { CameraIcon } from '../CameraIcon'
 import { ChatIcon } from '../ChatIcon'
 import { CheckIcon } from '../CheckIcon'
 import { EyeOffIcon } from '../EyeOffIcon'
@@ -30,6 +31,7 @@ export const IconRegistry = {
 	bell: BellIcon,
 	check: CheckIcon,
 	message: MessageIcon,
+	camera: CameraIcon,
 }
 
 export type IconType = typeof IconRegistry
