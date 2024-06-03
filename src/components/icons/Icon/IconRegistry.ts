@@ -1,5 +1,7 @@
 import { ArrowLeftIcon } from '../ArrowLeftIcon'
 import { BellIcon } from '../BellIcon'
+import { BellOnIcon } from '../BellOnIcon'
+import { BookmarkIcon } from '../BookmarkIcon'
 import { CameraIcon } from '../CameraIcon'
 import { ChatIcon } from '../ChatIcon'
 import { CheckIcon } from '../CheckIcon'
@@ -34,6 +36,8 @@ export const IconRegistry = {
 	message: MessageIcon,
 	camera: CameraIcon,
 	comment: CommentIcon,
+	bellOn: BellOnIcon,
+	bookmark: BookmarkIcon,
 }
 
 export type IconType = typeof IconRegistry
