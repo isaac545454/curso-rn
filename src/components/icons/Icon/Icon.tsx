@@ -4,12 +4,13 @@ import { IconName, IconRegistry } from './IconRegistry'
 
 type IconProps = {
 	name: IconName
-	color: ThemeColors
+	color?: ThemeColors
+	size?: number
 }
 
-export const Icon = ({ name, color, ...iconProps }: IconProps) => {
+export const Icon = ({ name, color = 'backgroundContrast', size }: IconProps) => {
 	const { colors } = useThemeRestyle()
 	const SVGIcon = IconRegistry[name]
 
-	return <SVGIcon {...iconProps} color={colors[color]} />
+	return <SVGIcon size={size} color={colors[color]} />
 }
