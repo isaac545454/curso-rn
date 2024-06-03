@@ -13,6 +13,7 @@ import { EyeOnIcon } from '../EyeOnIcon/EyeOnIcon'
 import { FlashOffIcon } from '../FlashOffIcon'
 import { FlashOnIcon } from '../FlashOnIcon'
 import { HeartIcon } from '../HeartIcon'
+import { HomeFillIcon } from '../HomeFillIcon'
 import { HomeIcon } from '../HomeIcon'
 import { MessageIcon } from '../MessageIcon'
 import { MoreIcon } from '../MoreIcon/MoreIcon'
@@ -48,6 +49,7 @@ export const IconRegistry = {
 	flashOn: FlashOnIcon,
 	newPost: NewPostIcon,
 	arrowRight: ArrowRightIcon,
+	homeFill: HomeFillIcon,
 }
 
 export type IconType = typeof IconRegistry
