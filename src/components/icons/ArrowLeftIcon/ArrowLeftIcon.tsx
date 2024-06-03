@@ -1,7 +1,7 @@
 import { Path, Svg } from 'react-native-svg'
 import { IconBase } from '../Icon'
 
-export const ArrowLeft = ({ color = 'black', size = 20 }: IconBase) => {
+export const ArrowLeftIcon = ({ color = 'black', size = 20 }: IconBase) => {
 	return (
 		<Svg width={size} height={size} viewBox="0 0 20 20" fill="none">
 			<Path
