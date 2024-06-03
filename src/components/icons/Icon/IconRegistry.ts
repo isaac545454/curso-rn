@@ -2,6 +2,7 @@ import { ArrowLeftIcon } from '../ArrowLeftIcon'
 import { ArrowRightIcon } from '../ArrowRightIcon'
 import { BellIcon } from '../BellIcon'
 import { BellOnIcon } from '../BellOnIcon'
+import { BookmarkFillIcon } from '../BookmarkFillIcon'
 import { BookmarkIcon } from '../BookmarkIcon'
 import { CameraIcon } from '../CameraIcon'
 import { ChatIcon } from '../ChatIcon'
@@ -50,6 +51,7 @@ export const IconRegistry = {
 	newPost: NewPostIcon,
 	arrowRight: ArrowRightIcon,
 	homeFill: HomeFillIcon,
+	bookmarkFill: BookmarkFillIcon,
 }
 
 export type IconType = typeof IconRegistry
