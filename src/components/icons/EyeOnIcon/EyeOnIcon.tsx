@@ -1,7 +1,7 @@
 import { Svg, Path } from 'react-native-svg'
-import { IconProps } from '../EyeOffIcon'
+import { IconBase } from '../Icon'
 
-export const EyeOnIcon = ({ color = 'black', size = 20 }: IconProps) => {
+export const EyeOnIcon = ({ color = 'black', size = 20 }: IconBase) => {
 	return (
 		<Svg width={size} height={size} viewBox="0 0 20 20" fill="none">
 			<Path
