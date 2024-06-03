@@ -1,6 +1,8 @@
 import { ArrowLeftIcon } from '../ArrowLeftIcon'
 import { EyeOffIcon } from '../EyeOffIcon'
 import { EyeOnIcon } from '../EyeOnIcon/EyeOnIcon'
+import { HomeIcon } from '../HomeIcon'
+import { ProfileIcon } from '../ProfileIcon'
 import { SearchIcon } from '../SearchIcon/SearchIcon'
 import { SendIcon } from '../SendIcon'
 import { SettingsIcon } from '../SettingsIcon/SettingsIcon'
@@ -14,6 +16,8 @@ export const IconRegistry = {
 	settings: SettingsIcon,
 	send: SendIcon,
 	search: SearchIcon,
+	home: HomeIcon,
+	profile: ProfileIcon,
 }
 
 export type IconType = typeof IconRegistry
