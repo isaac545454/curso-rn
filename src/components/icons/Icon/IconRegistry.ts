@@ -19,6 +19,7 @@ import { HomeIcon } from '../HomeIcon'
 import { MessageIcon } from '../MessageIcon'
 import { MoreIcon } from '../MoreIcon/MoreIcon'
 import { NewPostIcon } from '../NewPostIcon'
+import { ProfileFillIcon } from '../ProfileFillIcon'
 import { ProfileIcon } from '../ProfileIcon'
 import { SearchIcon } from '../SearchIcon/SearchIcon'
 import { SendIcon } from '../SendIcon'
@@ -52,6 +53,7 @@ export const IconRegistry = {
 	arrowRight: ArrowRightIcon,
 	homeFill: HomeFillIcon,
 	bookmarkFill: BookmarkFillIcon,
+	profileFill: ProfileFillIcon,
 }
 
 export type IconType = typeof IconRegistry
