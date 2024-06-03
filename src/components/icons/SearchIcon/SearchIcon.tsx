@@ -1,6 +1,7 @@
 import { Path, Svg } from 'react-native-svg'
+import { IconBase } from '../Icon'
 
-export const SearchIcon = () => {
+export const SearchIcon = ({ color = 'black', size = 20 }: IconBase) => {
 	return (
 		<Svg width="20" height="20" viewBox="0 0 20 20" fill="none">
 			<Path
