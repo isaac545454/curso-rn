@@ -1,15 +1,37 @@
 import React from 'react'
-import { Box } from './src/components/UI/Box'
 import { ThemeProvider } from '@shopify/restyle'
 import { theme } from './src/theme'
-import { Icon } from './src/components/icons/Icon'
+import { SafeAreaView, View } from 'react-native'
+import { Text } from './src/components/UI/Text'
+import { Box } from './src/components/UI/Box'
+import { Button } from './src/components/UI/Button'
+import { TextInput } from './src/components/UI/TextInput'
 
 function App(): React.JSX.Element {
 	return (
 		<ThemeProvider theme={theme}>
-			<Box gap={'s20'}>
-				<Icon name="eyeOn" color="gray1" />
-			</Box>
+			<SafeAreaView>
+				<View style={{ paddingHorizontal: 24 }}>
+					<Text mb="s8" preset="headingLarge">
+						Olá!
+					</Text>
+					<Text preset="paragraphLarge" mb="s40">
+						Digite seu e-mail e senha para entrar
+					</Text>
+					<Box mb="s20">
+						<TextInput label="E-mail" placeholder="Digite seu e-mail" style={{ borderWidth: 1, height: 50 }} />
+					</Box>
+					<Box>
+						<TextInput label="Senha" placeholder="Digite sua senha" style={{ borderWidth: 1, height: 50 }} />
+					</Box>
+					<Text mt="s10" color="primary" preset="paragraphSmall" bold>
+						Esqueci minha senha
+					</Text>
+
+					<Button mt="s48" title="Entrar" />
+					<Button mt="s12" title="Criar uma conta" preset="outline" />
+				</View>
+			</SafeAreaView>
 		</ThemeProvider>
 	)
 }
