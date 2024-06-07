@@ -6,6 +6,7 @@ import { Text } from './src/components/UI/Text'
 import { Box } from './src/components/UI/Box'
 import { Button } from './src/components/UI/Button'
 import { TextInput } from './src/components/UI/TextInput'
+import { Icon } from './src/components/icons/Icon'
 
 function App(): React.JSX.Element {
 	return (
@@ -24,10 +25,19 @@ function App(): React.JSX.Element {
 					<Box>
 						<TextInput
 							label="Senha"
-							errorMessage="console.error();
-						"
+							errorMessage="Test Error"
 							placeholder="Digite sua senha"
 							style={{ borderWidth: 1, height: 50 }}
+							RightComponent={() => <Icon name="eyeOn" />}
+						/>
+						<TextInput
+							label="Senha"
+							errorMessage="Test Error"
+							placeholder="Digite sua senha"
+							style={{ borderWidth: 1, height: 50 }}
+							RightComponent={() => {
+								return <Icon name="eyeOn" />
+							}}
 						/>
 					</Box>
 					<Text mt="s10" color="primary" preset="paragraphSmall" bold>

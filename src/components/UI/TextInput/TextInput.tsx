@@ -8,9 +8,10 @@ import { useThemeRestyle } from '../../../hooks/useThemeRestyle'
 type TextInputProps = RNTextInputProps & {
 	label: string
 	errorMessage?: string
+	RightComponent?: () => React.ReactElement
 }
 
-export const TextInput = ({ label, errorMessage, ...rntextInputProps }: TextInputProps) => {
+export const TextInput = ({ label, errorMessage, RightComponent, ...rntextInputProps }: TextInputProps) => {
 	const { colors } = useThemeRestyle()
 	const InputRef = useRef<RNTextInput>(null)
 
@@ -29,6 +30,11 @@ export const TextInput = ({ label, errorMessage, ...rntextInputProps }: TextInpu
 						placeholderTextColor={colors.gray2}
 						style={$TextInputStyle}
 					/>
+					{RightComponent && (
+						<Box justifyContent="center" ml="s16">
+							<RightComponent />
+						</Box>
+					)}
 				</Box>
 				{errorMessage && (
 					<Text preset="paragraphSmall" bold color="error">
