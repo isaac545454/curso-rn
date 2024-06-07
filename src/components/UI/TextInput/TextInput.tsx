@@ -7,9 +7,10 @@ import { useThemeRestyle } from '../../../hooks/useThemeRestyle'
 
 type TextInputProps = RNTextInputProps & {
 	label: string
+	errorMessage?: string
 }
 
-export const TextInput = ({ label, ...rntextInputProps }: TextInputProps) => {
+export const TextInput = ({ label, errorMessage, ...rntextInputProps }: TextInputProps) => {
 	const { colors } = useThemeRestyle()
 	const InputRef = useRef<RNTextInput>(null)
 
@@ -21,7 +22,7 @@ export const TextInput = ({ label, ...rntextInputProps }: TextInputProps) => {
 				<Text mb="s4" preset="paragraphMedium">
 					{label}
 				</Text>
-				<Box {...$TextInputContainer}>
+				<Box {...$TextInputContainer(errorMessage)}>
 					<RNTextInput
 						{...rntextInputProps}
 						ref={InputRef}
@@ -29,6 +30,11 @@ export const TextInput = ({ label, ...rntextInputProps }: TextInputProps) => {
 						style={$TextInputStyle}
 					/>
 				</Box>
+				{errorMessage && (
+					<Text preset="paragraphSmall" bold color="error">
+						{errorMessage}
+					</Text>
+				)}
 			</Box>
 		</Pressable>
 	)

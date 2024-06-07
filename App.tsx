@@ -22,7 +22,13 @@ function App(): React.JSX.Element {
 						<TextInput label="E-mail" placeholder="Digite seu e-mail" style={{ borderWidth: 1, height: 50 }} />
 					</Box>
 					<Box>
-						<TextInput label="Senha" placeholder="Digite sua senha" style={{ borderWidth: 1, height: 50 }} />
+						<TextInput
+							label="Senha"
+							errorMessage="console.error();
+						"
+							placeholder="Digite sua senha"
+							style={{ borderWidth: 1, height: 50 }}
+						/>
 					</Box>
 					<Text mt="s10" color="primary" preset="paragraphSmall" bold>
 						Esqueci minha senha
