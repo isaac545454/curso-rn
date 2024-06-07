@@ -4,22 +4,24 @@ import { Box } from '../Box'
 import { Text } from '../Text'
 import { $TextInputContainer, $TextInputStyle } from './style'
 import { useThemeRestyle } from '../../../hooks/useThemeRestyle'
+import { BoxProps } from '../Box/Box'
 
 type TextInputProps = RNTextInputProps & {
 	label: string
 	errorMessage?: string
 	RightComponent?: () => React.ReactElement
+	boxProps?: BoxProps
 }
 
-export const TextInput = ({ label, errorMessage, RightComponent, ...rntextInputProps }: TextInputProps) => {
+export const TextInput = ({ label, errorMessage, RightComponent, boxProps, ...rntextInputProps }: TextInputProps) => {
 	const { colors } = useThemeRestyle()
 	const InputRef = useRef<RNTextInput>(null)
 
 	const FocusInput = () => InputRef.current?.focus()
 
 	return (
-		<Pressable onPress={FocusInput}>
-			<Box>
+		<Box {...boxProps}>
+			<Pressable onPress={FocusInput}>
 				<Text mb="s4" preset="paragraphMedium">
 					{label}
 				</Text>
@@ -41,7 +43,7 @@ export const TextInput = ({ label, errorMessage, RightComponent, ...rntextInputP
 						{errorMessage}
 					</Text>
 				)}
-			</Box>
-		</Pressable>
+			</Pressable>
+		</Box>
 	)
 }

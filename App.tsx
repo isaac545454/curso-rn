@@ -35,9 +35,6 @@ function App(): React.JSX.Element {
 							errorMessage="Test Error"
 							placeholder="Digite sua senha"
 							style={{ borderWidth: 1, height: 50 }}
-							RightComponent={() => {
-								return <Icon name="eyeOn" />
-							}}
 						/>
 					</Box>
 					<Text mt="s10" color="primary" preset="paragraphSmall" bold>
